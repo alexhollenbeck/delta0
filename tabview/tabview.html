@@ -10,14 +10,14 @@
         <form action="tabview.html" method="get">
             <div class="TabView" id="TabView">
                 <div class="Tabs" style="width: 350px;">
-                  <a>Page</a>
+                  <a id="page-tab">Page</a>
                   <a>HTML</a>
                   <a>CSS</a>
                 </div>
                 <div class="Pages" style="width: 800px; height: 500px;">
                     <div class="Page" style="background: gray">
                         <div class="Pad">
-                            <div class="toggle-box">
+                            <div class="toggle-box color-scheme-1 color1">
                                 <img src="http://delta.northwestern.edu/wordpress/wp-content/uploads/2013/11/logo.jpg" alt="Delta Lab logo">
                             </div>
                         </div>
@@ -32,7 +32,7 @@
                         </div>
                     </div>
                     <div class="Page">
-                        <div class="Pad" contenteditable="true">
+                        <div class="Pad" id = "css-editor" contenteditable="true">
                             <code>
                                 html, body {<br>
                                     &nbsp;&nbsp;background: gray;<br>
@@ -62,6 +62,7 @@
                 </div>
             </div>
         </form>
+        <div class="instructions">Change the color scheme of the box from blue/orange to blue/yellow.</div>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script type="text/javascript" src="handlers.js"></script>
         <script type="text/javascript">
